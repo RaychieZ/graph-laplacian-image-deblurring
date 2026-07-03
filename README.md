@@ -4,6 +4,14 @@ Python implementation of image deblurring with graph-Laplacian regularization.
 
 This project constructs a blurred/noisy observation from a grayscale image and restores the image by solving a regularized inverse problem with a sparse weighted graph Laplacian and conjugate gradient.
 
+## Results
+
+The method improves the PSNR from **38.4841 dB** for the blurred/noisy image to **42.4316 dB** for the restored image.
+
+| Original | Blurred / Noisy | Restored |
+|---|---|---|
+| <img src="docs/results/original.png" width="250"> | <img src="docs/results/blurred_noisy.png" width="250"> | <img src="docs/results/restored.png" width="250"> |
+
 ## Method
 
 Let $x$ be the unknown clean image, $A$ be a Gaussian blur operator, and $b^\delta$ be the blurred/noisy observation:
