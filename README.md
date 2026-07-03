@@ -6,23 +6,23 @@ This project constructs a blurred/noisy observation from a grayscale image and r
 
 ## Method
 
-Let \(x\) be the unknown clean image, \(A\) be a Gaussian blur operator, and \(b^\delta\) be the blurred/noisy observation:
+Let $x$ be the unknown clean image, $A$ be a Gaussian blur operator, and $b^\delta$ be the blurred/noisy observation:
 
-\[
+$$
 b^\delta = A x_{\mathrm{true}} + \eta .
-\]
+$$
 
 The restoration is computed by solving
 
-\[
+$$
 \min_x \|Ax - b^\delta\|_2^2 + \mu x^T L x,
-\]
+$$
 
-where \(L\) is a weighted graph Laplacian built from the observed blurred/noisy image. The normal equation is
+where $L$ is a weighted graph Laplacian built from the observed blurred/noisy image. The normal equation is
 
-\[
+$$
 (A^T A + \mu L)x = A^T b^\delta .
-\]
+$$
 
 Pixels are treated as graph vertices with 4-neighbor edges. The edge weights are
 
