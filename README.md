@@ -23,7 +23,7 @@ $$
 The restoration is computed by solving
 
 $$
-\min_x \|Ax - b^\delta\|_2^2 + \mu x^T L x,
+\min_x \lVert Ax - b^\delta \rVert_2^2 + \mu x^T L x,
 $$
 
 where $L$ is a weighted graph Laplacian built from the observed blurred/noisy image. The normal equation is
