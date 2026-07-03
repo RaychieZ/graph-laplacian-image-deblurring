@@ -1,0 +1,3 @@
+Blurred/noisy PSNR: 38.4841
+Restored PSNR: 42.4316
+CG info: 0

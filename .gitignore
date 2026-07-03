@@ -1,0 +1,20 @@
+# Python
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# OS files
+.DS_Store
+
+# Generated outputs
+results/*
+!results/.gitkeep
+
+# Local data; commit only images you have the right to share
+/data/*
+!/data/.gitkeep
