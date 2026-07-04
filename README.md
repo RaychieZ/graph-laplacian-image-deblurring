@@ -2,6 +2,10 @@
 
 Python implementation of image deblurring with graph-Laplacian regularization.
 
+Originally developed for a mathematical image analysis project and later revised into a cleaner GitHub implementation.
+
+## Overview
+
 This project constructs a blurred/noisy observation from a grayscale image and restores the image by solving a regularized inverse problem with a sparse weighted graph Laplacian and conjugate gradient.
 
 ## Results
